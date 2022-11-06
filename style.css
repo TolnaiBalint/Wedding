@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    list-style: none;
+}
+
+h2,
+h3,
+ul,
+p,
+img {
+    margin-bottom: 1.5rem;
+}
+
+body {
+    background: url(img/wedding-landing-background.png);
+    font-family: 'Libre Baskerville', serif;
+    line-height: 1.5;
+    font-size: 1.125rem;
+}
+
+h1,
+h2 {
+    font-family: 'Great Vibes', cursive;
+
+}
+
+h2 {
+    font-size: 45px;
+    font-weight: normal;
+}
+
+p,
+li {
+    font-size: 15px;
+}
+
+a {
+    color: #bd806e;
+    text-decoration: none;
+    transition: color .15s ease-in-out;
+}
+
+a:hover {
+    color: #eda087;
+}
+
+.locations,
+.program,
+.gifts,
+.questions-answers,
+.contact {
+    width: 95%;
+    margin: 1.5rem auto;
+    padding: .5rem 1rem;
+    text-align: center;
+}
+
+
+/* HEADER */
+
+header {
+    background: url(img/wedding-landing-cover.jpg) no-repeat 70% center/cover;
+    display: table;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.head {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+.head-text p,
+.head-text span {
+    letter-spacing: .16rem;
+}
+
+.head-text {
+    background: rgba(0, 0, 0, .50);
+    color: white;
+    padding: 10px;
+    font-weight: 600;
+}
+
+@media (min-width:720px) {
+    header {
+        background: url(img/wedding-landing-cover.jpg) no-repeat center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .head {
+        width: 50%; 
+    }
+}
+@media (min-width:992px) {
+    header {
+        background: url(img/wedding-landing-cover.jpg) no-repeat center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.head-text h1 {
+    font-size: 2.7rem;
+    color: #d2ba87;
+    font-weight: 400;
+}
+
+@media (min-width:720px) {
+    .head-text h1 {
+        font-size: 5rem;
+    }
+
+}
+@media (min-width:1200px) {
+    .head-text h1 {
+        font-size: 6rem;
+    }
+
+}
+
+.head-text p::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 10.5rem;
+    margin: 0.5rem auto;
+    background-color: white;
+
+}
+
+.date::before,
+.date::after {
+    display: inline-block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 1.5rem;
+    vertical-align: middle;
+    margin: 0 .5rem;
+}
+
+/* LOCATIONS */
+
+.ceremony-photos::after {
+    content: "";
+    display: block;
+    height: .15rem;
+    width: 25vw;
+    margin: 1.5rem auto;
+    background-color: #444349;
+}
+
+
+.locations img {
+    height: 7.5rem;
+}
+
+@media (min-width:720px) {
+
+    .ceremony-photos,
+    .party {
+        display: inline-block;
+        width: 30%;
+        padding: 1.5rem;
+        margin: .5rem;
+    }
+
+    .ceremony-photos::after {
+        display: none;
+    }
+}
+
+/* PROGRAM */
+
+.program {
+    color: #d2ba87;
+    background: rgba(0, 0, 0, .65);
+    width: 100%;
+    padding: 20px;
+}
+
+.program p,
+.program-time {
+    text-align: left;
+}
+
+@media (min-width:480px) {
+
+    .program p,
+    .program-time {
+        width: 20rem;
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.program p {
+    font-style: italic;
+}
+
+/* GIFTS */
+
+.gifts img {
+    height: 7.5rem;
+}
+
+/* QUESTIONs & ANSWERS */
+
+.questions-answers {
+    color: #d2ba87;
+    background: rgba(0, 0, 0, .65);
+    width: 100%;
+}
+
+.questions-answers h3 {
+    font-size: 1.4rem;
+}
+
+.questions-answers p {
+    text-align: left;
+}
+
+.question {
+    font-weight: 700;
+    margin: 8px auto;
+}
+
+.qa::after {
+    content: "";
+    display: block;
+    height: .15rem;
+    width: 45vw;
+    margin: 2rem auto;
+    background-color: #d2ba87;
+}
+
+@media (min-width:720px) {
+
+    .qa {
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+        padding: 1.5rem;
+        margin: .5rem;
+    }
+
+    .questions-answers h3 {
+        text-align: left;
+    }
+
+    .qa::after {
+        display: none;
+    }
+}
+
+/* CONTACT */
+
+
+/* fOOTER */
+
+footer {
+    background-color: #606060;
+    color: #fff;
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+    display: table;
+    font-family: 'Muli', sans-serif;
+    ;
+}
+
+footer div {
+    display: table-cell;
+    vertical-align: middle;
+    padding: .5rem 1rem;
+}
+
+footer p {
+    margin-bottom: 0;
+    font-size: .75rem
+}
+
+footer small {
+    line-height: 1.5;
+}
