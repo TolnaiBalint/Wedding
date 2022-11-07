@@ -151,6 +151,10 @@ header {
 
 /* LOCATIONS */
 
+.locations p {
+    margin-bottom: 0;
+}
+
 .ceremony-photos::after {
     content: "";
     display: block;
